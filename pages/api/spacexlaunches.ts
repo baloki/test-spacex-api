@@ -21,7 +21,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
     const data = await result.json();
 
     const formattedData: ReturnDataFormat[] = [];
-    for (let i = 0; i <= 10; i++) {
+    for (let i = 0; i < 10; i++) {
       const element = data[i];
       const newElement = {
         name: element.name,
