@@ -1,108 +1,522 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders homepage unchanged 1`] = `
-<div>
-  <div
-    class="container"
-  >
-    <main
-      class="main"
+exports[`snapshot test renders an error when the feed cannot be loaded 1`] = `
+<body>
+  <div />
+  <div>
+    <div
+      class="container"
     >
-      <h1
-        class="title"
+      <main
+        class="main"
       >
-        Welcome to 
-        <a
-          href="https://nextjs.org"
+        <h1
+          class="title"
         >
-          Next.js!
-        </a>
-      </h1>
-      <p
-        class="description"
-      >
-        Get started by editing 
-        <code
-          class="code"
+          SpaceX Launches
+        </h1>
+        <div
+          class="grid"
         >
-          pages/index.js
-        </code>
-      </p>
-      <div
-        class="grid"
+          There was an error loading the feed.
+        </div>
+      </main>
+      <footer
+        class="footer"
       >
         <a
-          class="card"
-          href="https://nextjs.org/docs"
+          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          rel="noopener noreferrer"
+          target="_blank"
         >
-          <h2>
-            Documentation →
-          </h2>
-          <p>
-            Find in-depth information about Next.js features and API.
-          </p>
+          Powered by
+           
+          <span
+            class="logo"
+          >
+            <img
+              alt="Vercel Logo"
+              data-nimg="1"
+              decoding="async"
+              height="16"
+              loading="lazy"
+              src="/vercel.svg"
+              style="color: transparent;"
+              width="72"
+            />
+          </span>
         </a>
-        <a
-          class="card"
-          href="https://nextjs.org/learn"
-        >
-          <h2>
-            Learn →
-          </h2>
-          <p>
-            Learn about Next.js in an interactive course with quizzes!
-          </p>
-        </a>
-        <a
-          class="card"
-          href="https://github.com/vercel/next.js/tree/master/examples"
-        >
-          <h2>
-            Examples →
-          </h2>
-          <p>
-            Discover and deploy boilerplate example Next.js projects.
-          </p>
-        </a>
-        <a
-          class="card"
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-        >
-          <h2>
-            Deploy →
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a public URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-    <footer
-      class="footer"
-    >
-      <a
-        href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        Powered by
-         
-        <span
-          class="logo"
-        >
-          <img
-            alt="Vercel Logo"
-            data-nimg="1"
-            decoding="async"
-            height="16"
-            loading="lazy"
-            src="/vercel.svg"
-            style="color: transparent;"
-            width="72"
-          />
-        </span>
-      </a>
-    </footer>
+      </footer>
+    </div>
   </div>
-</div>
+</body>
+`;
+
+exports[`snapshot test renders homepage unchanged 1`] = `
+<body>
+  <div />
+  <div>
+    <div
+      class="container"
+    >
+      <main
+        class="main"
+      >
+        <h1
+          class="title"
+        >
+          SpaceX Launches
+        </h1>
+        <div
+          class="grid"
+        >
+          <section
+            class="card"
+          >
+            <h2>
+              <img
+                alt="Mission logo of FalconSat"
+                class="logo"
+                src="https://images2.imgbox.com/94/f2/NN6Ph45r_o.png"
+              />
+              <span
+                class="missionName"
+              >
+                FalconSat
+              </span>
+              <span
+                class="coreId"
+              >
+                5e9e289df35918033d3b2623
+              </span>
+            </h2>
+            <p>
+              <em>
+                Date Launched
+              </em>
+              : 
+              24/03/2006
+            </p>
+            <h3>
+              Payloads
+            </h3>
+            <ul>
+              <li>
+                5eb0e4b5b6c3bb0006eeb1e1
+              </li>
+            </ul>
+            <h3>
+              Mission was a 
+              failure 🛑
+            </h3>
+            <span>
+              Reason given: merlin engine failure
+            </span>
+          </section>
+          <section
+            class="card"
+          >
+            <h2>
+              <img
+                alt="Mission logo of DemoSat"
+                class="logo"
+                src="https://images2.imgbox.com/f9/4a/ZboXReNb_o.png"
+              />
+              <span
+                class="missionName"
+              >
+                DemoSat
+              </span>
+              <span
+                class="coreId"
+              >
+                5e9e289ef35918416a3b2624
+              </span>
+            </h2>
+            <p>
+              <em>
+                Date Launched
+              </em>
+              : 
+              21/03/2007
+            </p>
+            <h3>
+              Payloads
+            </h3>
+            <ul>
+              <li>
+                5eb0e4b6b6c3bb0006eeb1e2
+              </li>
+            </ul>
+            <h3>
+              Mission was a 
+              failure 🛑
+            </h3>
+            <span>
+              Reason given: harmonic oscillation leading to premature engine shutdown
+            </span>
+          </section>
+          <section
+            class="card"
+          >
+            <h2>
+              <img
+                alt="Mission logo of Trailblazer"
+                class="logo"
+                src="https://images2.imgbox.com/6c/cb/na1tzhHs_o.png"
+              />
+              <span
+                class="missionName"
+              >
+                Trailblazer
+              </span>
+              <span
+                class="coreId"
+              >
+                5e9e289ef3591814873b2625
+              </span>
+            </h2>
+            <p>
+              <em>
+                Date Launched
+              </em>
+              : 
+              03/08/2008
+            </p>
+            <h3>
+              Payloads
+            </h3>
+            <ul>
+              <li>
+                5eb0e4b6b6c3bb0006eeb1e3
+              </li>
+              <li>
+                5eb0e4b6b6c3bb0006eeb1e4
+              </li>
+            </ul>
+            <h3>
+              Mission was a 
+              failure 🛑
+            </h3>
+            <span>
+              Reason given: residual stage-1 thrust led to collision between stage 1 and stage 2
+            </span>
+          </section>
+          <section
+            class="card"
+          >
+            <h2>
+              <img
+                alt="Mission logo of RatSat"
+                class="logo"
+                src="https://images2.imgbox.com/95/39/sRqN7rsv_o.png"
+              />
+              <span
+                class="missionName"
+              >
+                RatSat
+              </span>
+              <span
+                class="coreId"
+              >
+                5e9e289ef3591855dc3b2626
+              </span>
+            </h2>
+            <p>
+              <em>
+                Date Launched
+              </em>
+              : 
+              29/09/2008
+            </p>
+            <h3>
+              Payloads
+            </h3>
+            <ul>
+              <li>
+                5eb0e4b7b6c3bb0006eeb1e5
+              </li>
+            </ul>
+            <h3>
+              Mission was a 
+              success 🎉
+            </h3>
+          </section>
+          <section
+            class="card"
+          >
+            <h2>
+              <img
+                alt="Mission logo of RazakSat"
+                class="logo"
+                src="https://images2.imgbox.com/ab/5a/Pequxd5d_o.png"
+              />
+              <span
+                class="missionName"
+              >
+                RazakSat
+              </span>
+              <span
+                class="coreId"
+              >
+                5e9e289ef359184f103b2627
+              </span>
+            </h2>
+            <p>
+              <em>
+                Date Launched
+              </em>
+              : 
+              13/07/2009
+            </p>
+            <h3>
+              Payloads
+            </h3>
+            <ul>
+              <li>
+                5eb0e4b7b6c3bb0006eeb1e6
+              </li>
+            </ul>
+            <h3>
+              Mission was a 
+              success 🎉
+            </h3>
+          </section>
+          <section
+            class="card"
+          >
+            <h2>
+              <img
+                alt="Mission logo of Falcon 9 Test Flight"
+                class="logo"
+                src="https://images2.imgbox.com/73/7f/u7BKqv2C_o.png"
+              />
+              <span
+                class="missionName"
+              >
+                Falcon 9 Test Flight
+              </span>
+              <span
+                class="coreId"
+              >
+                5e9e289ef359185f2b3b2628
+              </span>
+            </h2>
+            <p>
+              <em>
+                Date Launched
+              </em>
+              : 
+              04/06/2010
+            </p>
+            <h3>
+              Payloads
+            </h3>
+            <ul>
+              <li>
+                5eb0e4b7b6c3bb0006eeb1e7
+              </li>
+            </ul>
+            <h3>
+              Mission was a 
+              success 🎉
+            </h3>
+          </section>
+          <section
+            class="card"
+          >
+            <h2>
+              <img
+                alt="Mission logo of COTS 1"
+                class="logo"
+                src="https://images2.imgbox.com/fa/dc/FOUDQ0Sn_o.png"
+              />
+              <span
+                class="missionName"
+              >
+                COTS 1
+              </span>
+              <span
+                class="coreId"
+              >
+                5e9e289ef35918187c3b2629
+              </span>
+            </h2>
+            <p>
+              <em>
+                Date Launched
+              </em>
+              : 
+              08/12/2010
+            </p>
+            <h3>
+              Payloads
+            </h3>
+            <ul>
+              <li>
+                5eb0e4b9b6c3bb0006eeb1e8
+              </li>
+              <li>
+                5eb0e4b9b6c3bb0006eeb1e9
+              </li>
+            </ul>
+            <h3>
+              Mission was a 
+              success 🎉
+            </h3>
+          </section>
+          <section
+            class="card"
+          >
+            <h2>
+              <img
+                alt="Mission logo of COTS 2"
+                class="logo"
+                src="https://images2.imgbox.com/c5/f4/XfLVgbaO_o.png"
+              />
+              <span
+                class="missionName"
+              >
+                COTS 2
+              </span>
+              <span
+                class="coreId"
+              >
+                5e9e289ef35918f39c3b262a
+              </span>
+            </h2>
+            <p>
+              <em>
+                Date Launched
+              </em>
+              : 
+              22/05/2012
+            </p>
+            <h3>
+              Payloads
+            </h3>
+            <ul>
+              <li>
+                5eb0e4bab6c3bb0006eeb1ea
+              </li>
+            </ul>
+            <h3>
+              Mission was a 
+              success 🎉
+            </h3>
+          </section>
+          <section
+            class="card"
+          >
+            <h2>
+              <img
+                alt="Mission logo of CRS-1"
+                class="logo"
+                src="https://images2.imgbox.com/3e/91/hlGiK49a_o.png"
+              />
+              <span
+                class="missionName"
+              >
+                CRS-1
+              </span>
+              <span
+                class="coreId"
+              >
+                5e9e289ff3591821a73b262b
+              </span>
+            </h2>
+            <p>
+              <em>
+                Date Launched
+              </em>
+              : 
+              08/10/2012
+            </p>
+            <h3>
+              Payloads
+            </h3>
+            <ul>
+              <li>
+                5eb0e4bab6c3bb0006eeb1eb
+              </li>
+              <li>
+                5eb0e4bab6c3bb0006eeb1ec
+              </li>
+            </ul>
+            <h3>
+              Mission was a 
+              success 🎉
+            </h3>
+          </section>
+          <section
+            class="card"
+          >
+            <h2>
+              <img
+                alt="Mission logo of CRS-2"
+                class="logo"
+                src="https://images2.imgbox.com/bd/fe/lXUYKL28_o.png"
+              />
+              <span
+                class="missionName"
+              >
+                CRS-2
+              </span>
+              <span
+                class="coreId"
+              >
+                5e9e289ff3591884e03b262c
+              </span>
+            </h2>
+            <p>
+              <em>
+                Date Launched
+              </em>
+              : 
+              01/03/2013
+            </p>
+            <h3>
+              Payloads
+            </h3>
+            <ul>
+              <li>
+                5eb0e4bbb6c3bb0006eeb1ed
+              </li>
+            </ul>
+            <h3>
+              Mission was a 
+              success 🎉
+            </h3>
+          </section>
+        </div>
+      </main>
+      <footer
+        class="footer"
+      >
+        <a
+          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Powered by
+           
+          <span
+            class="logo"
+          >
+            <img
+              alt="Vercel Logo"
+              data-nimg="1"
+              decoding="async"
+              height="16"
+              loading="lazy"
+              src="/vercel.svg"
+              style="color: transparent;"
+              width="72"
+            />
+          </span>
+        </a>
+      </footer>
+    </div>
+  </div>
+</body>
 `;

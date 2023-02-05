@@ -1,18 +1,25 @@
 import { ReturnDataFormat } from '@/custom_types/returndataformat';
+import styles from '../../styles/Home.module.css';
 
 export const Launch = ({ name, date_utc, primary_core_id, payloads, image, success, reason }: ReturnDataFormat) => {
-  // The data that we would like you to display are:
-
-  //   - name
-  //   - date_utc
-  //   - The first core serial/name from cores
-  //   - id and type from payloads
-  //   - display the image from links.patch.small in links
-  //   - use success and failures to show the user the success/failure of launch and reason of failure.
-
   return (
-    <section>
-      <h2>{name}</h2>
+    <section className={styles.card}>
+      <h2>
+        <img src={image} className={styles.logo} alt={`Mission logo of ${name}`} />
+        <span className={styles.missionName}>{name}</span>
+        <span className={styles.coreId}>{primary_core_id}</span>
+      </h2>
+      <p>
+        <em>Date Launched</em>: {new Date(date_utc).toLocaleDateString('en-GB')}
+      </p>
+      <h3>Payloads</h3>
+      <ul>
+        {payloads.map((payload) => (
+          <li key={`payload_id_${payload}`}>{payload}</li>
+        ))}
+      </ul>
+      <h3>Mission was a {success ? 'success 🎉' : 'failure 🛑'}</h3>
+      {reason && <span>{`Reason given: ${reason}`}</span>}
     </section>
   );
 };

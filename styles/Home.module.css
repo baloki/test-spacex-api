@@ -5,7 +5,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
 .main {
@@ -65,8 +64,8 @@
   border-radius: 5px;
   padding: 0.75rem;
   font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New,
+    monospace;
 }
 
 .grid {
@@ -74,8 +73,9 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 800px;
+  max-width: 1280px;
   margin-top: 3rem;
+  align-items: stretch;
 }
 
 .card {
@@ -100,6 +100,8 @@
 .card h2 {
   margin: 0 0 1rem 0;
   font-size: 1.5rem;
+  display: flex;
+  line-height: 1.5rem;
 }
 
 .card p {
@@ -108,14 +110,35 @@
   line-height: 1.5;
 }
 
+.missionName {
+  flex-grow: 1;
+}
+
+.coreId {
+  font-size: 0.75rem;
+}
+
 .logo {
   height: 1em;
-  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 @media (max-width: 600px) {
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .card h2 {
+    flex-wrap: wrap;
+  }
+
+  .coreId {
+    font-size: 0.5rem;
+    flex-basis: 100%;
   }
 }
