@@ -1,14 +1,5 @@
+import { ReturnDataFormat } from '@/custom_types/returndataformat';
 import type { NextApiRequest, NextApiResponse } from 'next';
-
-type ReturnDataFormat = {
-  name: string;
-  date_utc: string;
-  primary_core_id: string;
-  payloads: string[];
-  image: string;
-  success: boolean;
-  reason?: string;
-};
 
 type ResponseData = {
   data?: ReturnDataFormat[];
