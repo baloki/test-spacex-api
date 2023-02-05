@@ -1,8 +1,27 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import { useEffect, useState } from 'react';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
+  const [data, setData] = useState(null);
+  const [isLoading, setLoading] = useState(false);
+  const [isError, setError] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    fetch('/api/spacexlaunches')
+      .then((res) => res.json())
+      .then((data) => {
+        setData(data);
+        setLoading(false);
+      })
+      .catch((data) => {
+        setLoading(false);
+        setError(false);
+      });
+  }, []);
+
   return (
     <div className={styles.container}>
       <Head>
